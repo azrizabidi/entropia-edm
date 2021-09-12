@@ -1,0 +1,1047 @@
+$dark_blue: #0067b1;
+$light_blue: #70cde3;
+$red: #ef3e42;
+$white: #ffffff;
+$black: #404040;
+$total_black: #000000;
+$grey: #818A91;
+
+@font-face{
+    font-family:"high-tide";
+    src: url('/font/High\ Tide\ -\ Demo.ttf') format("truetype");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.section-title{
+    color: $dark_blue;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.text-primary {
+    color: $dark_blue !important;
+}
+
+.btn-primary {
+    background-color: $dark_blue;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.hero {
+    background-image: linear-gradient(90deg, rgba(89,152,195,1) 0%, rgba(71,135,178,0.94) 37%, rgba(95,158,201,0.04) 67%, rgba(89,152,195,0) 100%), url(/images/Mask_Group_211.png);
+    background-size: cover;
+    height: 816px;
+    width: 100%;
+
+    img {
+        height: auto;
+        width: 128px;
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+
+    div {
+        color: #fff;
+        height: 100%;
+        padding: 50px 90px;
+        position: relative;
+
+        .title {
+            font-family: 'high-tide';
+            font-size: 100px;
+        }
+
+        .subtitle {
+            font-size: 48px;
+            font-weight: 300;
+            
+        }
+    }
+
+    // &::before {
+    //     content: '';
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     background: linear-gradient(90deg, rgba(89,152,195,1) 0%, rgba(71,135,178,0.94) 37%, rgba(95,158,201,0.04) 67%, rgba(89,152,195,0) 100%);
+    //     height: inherit;
+    //     width: 100%;
+    //     opacity: 0.8;
+    //     // z-index: -1;
+    // }
+}
+
+#prizes {
+    background: url('/images/Path\ 25375.svg') no-repeat;
+    height: 100%;
+
+    .prizes-details {
+        background-color: #ffffff;
+
+        .amount {
+            position: relative;
+            font-size: 53px;
+            font-weight: 900;
+            padding-left: 30px;
+            text-shadow: 2px 2px $white;
+            color: $dark_blue;
+            margin-top: 35px;
+        }
+
+        .winners  {
+            position: relative;
+            font-weight: 900;
+            font-style: italic;
+            font-size: 20px;
+            color: $white;
+            margin-top: 12px;
+
+            span {
+                font-size: 30px;
+            }
+        }
+
+        .shape1 {
+            position: absolute;
+            top: 0;
+            left: 130px;
+            z-index: 0;
+        }
+
+        .shape2 {
+            position: absolute;
+            top: 10px;
+            left: 142px;
+            z-index: 0;
+        }
+
+        .shape3 {
+            position: absolute;
+            top: 104px;
+            left: 103px;
+            z-index: 0;
+        }
+
+        p {
+            font-size: 18px;
+            color: $black;
+        }
+    }
+}
+
+#entries {
+    background: url('/images/Path\ 25378.svg') no-repeat;
+    height: 100%;
+    width: 100%;
+
+    .table-responsive {
+        background: url('/images/Path\ 25379.svg') no-repeat;
+        height: 100%;
+        width: 100%;
+
+        .table {
+            max-width: 969px;
+
+            thead {
+                background-color: $light_blue;
+
+                tr {
+                    th {
+                        border: 1px solid $white;
+                        font-weight: 900;
+                        color: $dark_blue;
+                        font-size: 20px;
+                        width: 33.3%;
+                        height: 99px;
+                        vertical-align: middle;
+                    }
+                }
+            }
+
+            tbody {
+                background-color: rgba(112, 205, 227, 0.3);
+
+                tr {
+                    th {
+                        border: 1px solid $white;
+                        width: 33.3%;
+                        height: 99px;
+                        vertical-align: middle;
+
+                        &:first-child {
+                            background-color: $dark_blue;
+                            font-size: 18px;
+                            font-weight: 400;
+                            color: $white;
+                        }
+                    }
+
+                    td {
+                        border: 1px solid $white;
+                        font-size: 30px;
+                        color: $dark_blue;
+                        width: 33.3%;
+                        height: 99px;
+                        vertical-align: middle;
+
+                        span {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+
+            &.table-bordered {
+                border: 1px solid $white;
+            }
+
+        }
+    }
+}
+
+
+#paywith {
+    background-color: rgba(112, 205, 227, 0.1);
+
+    .carousel {
+        .carousel-inner {
+            overflow: visible;
+
+            .carousel-caption {
+                text-align: left;
+                position: initial;
+
+                h6 {
+                    color: $red;
+                }
+
+                p {
+                    color: $black;
+                }
+            }
+        }
+
+        .carousel-indicators {
+            position: relative;
+            justify-content: flex-start;
+            margin: 0;
+
+            li {
+                height: 0;
+                width: 0;
+                border: 20px solid transparent;
+                border-bottom-color: $grey;
+                position: relative;
+                top: 0;
+                text-indent: 0;
+
+                p {
+                    color: $white;
+                    font-size: 16px;
+                    font-weight: bold;
+                    position: absolute;
+                    top: 7px;
+                    left: -5px;
+                }
+
+                &.active {
+                    border-bottom-color: $red;
+
+                    &::after {
+                        border-top-color: $red;
+                    }
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    left: -20px;
+                    top: 20px;
+                    width: 0;
+                    height: 0;
+                    border: 20px solid transparent;
+                    border-top-color: $grey;
+                    z-index: -1;
+                }
+            }
+        }
+    }
+} 
+
+#mobileapp {
+    background-color: $light_blue;
+    max-height: 650px;
+    overflow-y: visible;
+    margin-bottom: 300px;
+
+    .app-details {
+
+        #banking-right {
+            font-size: 57px;
+            color: $white;
+        }
+    
+        #by-you {
+            font-family: 'high-tide';
+            font-size: 108px;
+            color: $white;
+        }
+
+        #secure {
+            font-size: 20px;
+            color: $white;
+        }
+
+        #download {
+            font-size: 20px;
+            font-weight: bold;
+            color: $total_black;
+        }
+    }
+
+    .qr {
+        background-color: $total_black;
+        border-radius: 5px;
+        max-width: 180px;
+    }
+
+    #purpose {
+        font-size: 13px;
+    }
+}
+
+#terms {
+    .p-terms {
+        font-size: 16px;
+        color: $dark_blue;
+    }
+
+    .contact {
+        background-color: $light_blue;
+
+        h3 {
+            color: $white;
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 0;
+
+            &:first-child {
+                font-size: 40px;
+            }
+
+            span {
+                font-weight: 400;
+            }
+        }
+    }
+
+    .d-flex {
+        overflow-y: hidden;
+        vertical-align: middle;
+        margin-left: 100px;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: -200px;
+            height: 53px;
+            width: 300px;
+            background-color: $light_blue;
+        }
+    }
+
+    p {
+        font-size: 14px;
+        text-align: justify;
+    }
+}
+
+@media (max-width: 1199px) {
+
+    .hero {
+    
+        div {
+            padding: 20px;
+        }
+    }
+
+    #bg {
+
+        .container {
+    
+            #prizes {
+                height: 100%;
+    
+                .col-md-6 {
+            
+                    .prizes-details {
+    
+                
+                        .amount {
+                            font-size: 45px;
+                            margin-top: 0px;
+                            padding-left: 0;
+                        }
+                
+                        .winners {
+                            margin-top: 0;
+                            font-size: 18px;
+                
+                            span {
+                                font-size: 24px;
+                            }
+            
+                        }
+    
+                        .shape1 {
+                            position: absolute;
+                            top: -30px;
+                            left: 65px;
+                            z-index: 0;
+                            transform: scale(0.9);
+                        }
+    
+                        .shape2 {
+                            position: absolute;
+                            top: -25px;
+                            left: 80px;
+                            z-index: 0;
+                            transform: scale(0.9);
+                        }
+    
+                        .shape3 {
+                            position: absolute;
+                            top: 50px;
+                            left: 45px;
+                            z-index: 0;
+                            transform: scale(0.9);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #mobileapp {
+        margin-bottom: 180px;
+    }
+
+    #terms {
+
+        .d-flex {
+
+            &::after {
+                height: 75px;
+            }
+        }
+    }    
+
+}
+
+@media (max-width: 991px) {
+
+    .section-title{
+        font-size: 30px;
+    }
+
+    .hero {
+        height: 100%;
+    
+        img {
+            height: auto;
+            width: 70px;
+            top: 20px;
+            right: 30px;
+        }
+    
+        div {
+            padding: 20px;
+            min-height: 440px;
+    
+            .title {
+                font-size: 70px;
+            }
+    
+            .subtitle {
+                font-size: 25px;                
+            }
+        }
+    }
+
+    #bg {
+
+        .container {
+    
+            #prizes {
+                height: 100%;
+    
+                .col-md-6 {
+            
+                    .prizes-details {
+    
+                
+                        .amount {
+                            font-size: 38px;
+                            margin-top: 0px;
+                            padding-left: 0;
+                        }
+                
+                        .winners {
+                            margin-top: 20px;
+                            font-size: 16px;
+                
+                            span {
+                                font-size: 20px;
+                            }
+            
+                        }
+    
+                        .shape1 {
+                            position: absolute;
+                            top: -30px;
+                            left: 10px;
+                            z-index: 0;
+                            transform: scale(0.8);
+                        }
+    
+                        .shape2 {
+                            position: absolute;
+                            top: -25px;
+                            left: 25px;
+                            z-index: 0;
+                            transform: scale(0.8);
+                        }
+    
+                        .shape3 {
+                            position: absolute;
+                            top: 50px;
+                            left: 0;
+                            z-index: 0;
+                            transform: scale(0.8);
+                        }
+                
+                        .others {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #paywith {
+        p {
+            font-size: 16px;
+            margin-bottom: 0;
+        }
+    }
+
+    #mobileapp {
+        margin-bottom: 80px;
+        max-height: 450px;
+    
+        .app-details {
+
+            #banking-right {
+                font-size: 35px;
+            }
+
+            #by-you {
+                font-size: 75px;
+            }
+    
+            #secure {
+                font-size: 14px;
+            }
+    
+            #download {
+                font-size: 14px;
+            }
+        }
+    
+        .qr {
+            background: none;
+        }
+    
+        #purpose {
+            font-size: 13px;
+        }
+    }
+
+    #terms {
+        .p-terms {
+            font-size: 12px;
+        }
+    
+        .contact {
+    
+            h3 {
+                font-size: 18px;
+    
+                &:first-child {
+                    font-size: 24px;
+                }
+            }
+    
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 85px;
+                left: 0;
+                height: 40px;
+                width: 60px;
+                background-color: $light_blue;
+            }
+        }
+    
+        .d-flex {
+            margin-left: 0;
+            margin-top: 40px;
+    
+            &::after {
+                display: none;
+            }
+        }
+    
+        p {
+            font-size: 12px;
+            text-align: justify;
+        }
+    }
+    
+
+}
+
+@media (max-width: 767px) {
+
+    .section-title{
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .hero {
+    
+        img {
+            height: auto;
+            width: 30px;
+            top: 15px;
+            right: 15px;
+        }
+    
+        div {
+            padding: 20px;
+    
+            .title {
+                font-size: 35px;
+            }
+    
+            .subtitle {
+                font-size: 18px;                
+            }
+        }
+    }
+
+    #bg {
+        background: rgba(112, 205, 227, 0.3);
+
+        .container {
+    
+            #prizes {
+                height: 100%;
+                background: none;
+    
+                .col-md-6 {
+                    margin-bottom: 40px;
+            
+                    .prizes-details {
+    
+                
+                        .amount {
+                            font-size: 38px;
+                            margin-top: 0px;
+                            padding-left: 0;
+                        }
+                
+                        .winners {
+                            margin-top: 20px;
+                            font-size: 16px;
+                
+                            span {
+                                font-size: 20px;
+                            }
+            
+                        }
+    
+                        .shape1 {
+                            position: absolute;
+                            top: -35px;
+                            left: 110px;
+                            z-index: 0;
+                            transform: scale(0.8);
+                        }
+    
+                        .shape2 {
+                            position: absolute;
+                            top: -25px;
+                            left: 125px;
+                            z-index: 0;
+                            transform: scale(0.8);
+                        }
+    
+                        .shape3 {
+                            position: absolute;
+                            top: 50px;
+                            left: 95px;
+                            z-index: 0;
+                            transform: scale(0.8);
+                        }
+                
+                        .others {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+    
+            #entries {
+                background: none;
+            
+                .table-responsive {
+                    background: none;
+            
+                    .table {
+            
+                        thead {
+            
+                            tr {
+                                th {
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+            
+                        tbody {
+            
+                            tr {
+    
+                                th {
+            
+                                    &:first-child {
+                                        font-size: 16px;
+                                    }
+                                }
+            
+                                td {
+                                    font-size: 16px;
+            
+                                    span {
+                                        font-size: 16px;
+                                    }
+                                }
+                            }
+                        }
+            
+                    }
+                }
+            }
+        }
+    }
+
+    #mobileapp {
+        margin-bottom: 60px;
+    
+        .app-details {
+
+            #banking-right {
+                font-size: 30px;
+            }
+
+            #by-you {
+                font-size: 70px;
+            }
+        }
+    
+        .qr {
+            background: none;
+        }
+    
+        #purpose {
+            font-size: 13px;
+        }
+    }
+
+    #terms {
+        .p-terms {
+            font-size: 12px;
+        }
+    
+        .contact {
+    
+            h3 {
+                font-size: 18px;
+    
+                &:first-child {
+                    font-size: 24px;
+                }
+            }
+    
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 70px;
+                left: -70px;
+                height: 40px;
+                width: 160px;
+                background-color: $light_blue;
+            }
+        }
+    
+        .d-flex {
+            margin-left: 0;
+            margin-top: 40px;
+    
+            &::after {
+                display: none;
+            }
+        }
+    
+        p {
+            font-size: 12px;
+            text-align: justify;
+        }
+    }
+    
+
+}
+
+@media (max-width: 575.98px) {
+
+    .section-title{
+        font-size: 20px;
+    }
+
+    .btn-primary {
+        font-size: 16px;
+    }
+
+    .hero {
+        height: 218px;
+        // width: 100vw;
+        // max-width: 100%;
+    
+        img {
+            height: auto;
+            width: 30px;
+            top: 15px;
+            right: 15px;
+        }
+    
+        div {
+            padding: 20px;
+    
+            .title {
+                font-size: 35px;
+            }
+    
+            .subtitle {
+                font-size: 18px;                
+            }
+        }
+    }
+
+    #bg {
+        background: rgba(112, 205, 227, 0.3);
+
+        .container {
+    
+            #prizes {
+                height: 100%;
+                background: none;
+    
+                .col-md-6 {
+                    margin-bottom: 40px;
+            
+                    .prizes-details {
+    
+                
+                        .amount {
+                            font-size: 38px;
+                            margin-top: 0px;
+                            padding-left: 0;
+                        }
+                
+                        .winners {
+                            margin-top: 20px;
+                            font-size: 16px;
+                
+                            span {
+                                font-size: 20px;
+                            }
+            
+                        }
+    
+                        .shape1 {
+                            position: absolute;
+                            top: -30px;
+                            left: 10px;
+                            z-index: 0;
+                            transform: scale(0.8);
+                        }
+    
+                        .shape2 {
+                            position: absolute;
+                            top: -25px;
+                            left: 25px;
+                            z-index: 0;
+                            transform: scale(0.8);
+                        }
+    
+                        .shape3 {
+                            position: absolute;
+                            top: 50px;
+                            left: 0;
+                            z-index: 0;
+                            transform: scale(0.8);
+                        }
+                
+                        .others {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+    
+            #entries {
+                background: none;
+            
+                .table-responsive {
+                    background: none;
+            
+                    .table {
+            
+                        thead {
+            
+                            tr {
+                                th {
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+            
+                        tbody {
+            
+                            tr {
+    
+                                th {
+            
+                                    &:first-child {
+                                        font-size: 16px;
+                                    }
+                                }
+            
+                                td {
+                                    font-size: 16px;
+            
+                                    span {
+                                        font-size: 16px;
+                                    }
+                                }
+                            }
+                        }
+            
+                    }
+                }
+            }
+        }
+    }
+
+    #mobileapp {
+        margin-bottom: 180px;
+    
+        .app-details {
+
+            #banking-right {
+                font-size: 40px;
+            }
+
+            #by-you {
+                font-size: 90px;
+            }
+    
+            #secure {
+                font-size: 16px;
+            }
+    
+            #download {
+                font-size: 18px;
+            }
+        }
+    
+        .qr {
+            background: none;
+        }
+    
+        #purpose {
+            font-size: 13px;
+        }
+    }
+
+    #terms {
+        .p-terms {
+            font-size: 12px;
+        }
+    
+        .contact {
+    
+            h3 {
+                font-size: 18px;
+    
+                &:first-child {
+                    font-size: 24px;
+                }
+            }
+    
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 85px;
+                left: 0;
+                height: 40px;
+                width: 60px;
+                background-color: $light_blue;
+            }
+        }
+    
+        .d-flex {
+            margin-left: 0;
+            margin-top: 40px;
+    
+            &::after {
+                display: none;
+            }
+        }
+    
+        p {
+            font-size: 12px;
+            text-align: justify;
+        }
+    }
+    
+
+}

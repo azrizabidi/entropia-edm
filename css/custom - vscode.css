@@ -1,0 +1,791 @@
+@font-face {
+  font-family: "high-tide";
+  src: url("/font/High Tide - Demo.ttf") format("truetype");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+.section-title {
+  color: #0067b1;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.text-primary {
+  color: #0067b1 !important;
+}
+
+.btn-primary {
+  background-color: #0067b1;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.hero {
+  background-image: linear-gradient(90deg, #5998c3 0%, rgba(71, 135, 178, 0.94) 37%, rgba(95, 158, 201, 0.04) 67%, rgba(89, 152, 195, 0) 100%), url('./images/Mask_Group_211.png');
+  background-size: cover;
+  height: 816px;
+  width: 100%;
+}
+
+.hero img {
+  height: auto;
+  width: 128px;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
+
+.hero div {
+  color: #fff;
+  height: 100%;
+  padding: 50px 90px;
+  position: relative;
+}
+
+.hero div .title {
+  font-family: 'high-tide';
+  font-size: 100px;
+}
+
+.hero div .subtitle {
+  font-size: 48px;
+  font-weight: 300;
+}
+
+#prizes {
+  background: url("/images/Path 25375.svg") no-repeat;
+  height: 100%;
+}
+
+#prizes .prizes-details {
+  background-color: #ffffff;
+}
+
+#prizes .prizes-details .amount {
+  position: relative;
+  font-size: 53px;
+  font-weight: 900;
+  padding-left: 30px;
+  text-shadow: 2px 2px #ffffff;
+  color: #0067b1;
+  margin-top: 35px;
+}
+
+#prizes .prizes-details .winners {
+  position: relative;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 20px;
+  color: #ffffff;
+  margin-top: 12px;
+}
+
+#prizes .prizes-details .winners span {
+  font-size: 30px;
+}
+
+#prizes .prizes-details .shape1 {
+  position: absolute;
+  top: 0;
+  left: 130px;
+  z-index: 0;
+}
+
+#prizes .prizes-details .shape2 {
+  position: absolute;
+  top: 10px;
+  left: 142px;
+  z-index: 0;
+}
+
+#prizes .prizes-details .shape3 {
+  position: absolute;
+  top: 104px;
+  left: 103px;
+  z-index: 0;
+}
+
+#prizes .prizes-details p {
+  font-size: 18px;
+  color: #404040;
+}
+
+#entries {
+  background: url("/images/Path 25378.svg") no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+#entries .table-responsive {
+  background: url("/images/Path 25379.svg") no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+#entries .table-responsive .table {
+  max-width: 969px;
+}
+
+#entries .table-responsive .table thead {
+  background-color: #70cde3;
+}
+
+#entries .table-responsive .table thead tr th {
+  border: 1px solid #ffffff;
+  font-weight: 900;
+  color: #0067b1;
+  font-size: 20px;
+  width: 33.3%;
+  height: 99px;
+  vertical-align: middle;
+}
+
+#entries .table-responsive .table tbody {
+  background-color: rgba(112, 205, 227, 0.3);
+}
+
+#entries .table-responsive .table tbody tr th {
+  border: 1px solid #ffffff;
+  width: 33.3%;
+  height: 99px;
+  vertical-align: middle;
+}
+
+#entries .table-responsive .table tbody tr th:first-child {
+  background-color: #0067b1;
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+#entries .table-responsive .table tbody tr td {
+  border: 1px solid #ffffff;
+  font-size: 30px;
+  color: #0067b1;
+  width: 33.3%;
+  height: 99px;
+  vertical-align: middle;
+}
+
+#entries .table-responsive .table tbody tr td span {
+  font-size: 18px;
+}
+
+#entries .table-responsive .table.table-bordered {
+  border: 1px solid #ffffff;
+}
+
+#paywith {
+  background-color: rgba(112, 205, 227, 0.1);
+}
+
+#paywith .carousel .carousel-inner {
+  overflow: visible;
+}
+
+#paywith .carousel .carousel-inner .carousel-caption {
+  text-align: left;
+  position: initial;
+}
+
+#paywith .carousel .carousel-inner .carousel-caption h6 {
+  color: #ef3e42;
+}
+
+#paywith .carousel .carousel-inner .carousel-caption p {
+  color: #404040;
+}
+
+#paywith .carousel .carousel-indicators {
+  position: relative;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 0;
+}
+
+#paywith .carousel .carousel-indicators li {
+  height: 0;
+  width: 0;
+  border: 20px solid transparent;
+  border-bottom-color: #818A91;
+  position: relative;
+  top: 0;
+  text-indent: 0;
+}
+
+#paywith .carousel .carousel-indicators li p {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  position: absolute;
+  top: 7px;
+  left: -5px;
+}
+
+#paywith .carousel .carousel-indicators li.active {
+  border-bottom-color: #ef3e42;
+}
+
+#paywith .carousel .carousel-indicators li.active::after {
+  border-top-color: #ef3e42;
+}
+
+#paywith .carousel .carousel-indicators li::after {
+  content: '';
+  position: absolute;
+  left: -20px;
+  top: 20px;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-top-color: #818A91;
+  z-index: -1;
+}
+
+#mobileapp {
+  background-color: #70cde3;
+  max-height: 650px;
+  overflow-y: visible;
+  margin-bottom: 300px;
+}
+
+#mobileapp .app-details #banking-right {
+  font-size: 57px;
+  color: #ffffff;
+}
+
+#mobileapp .app-details #by-you {
+  font-family: 'high-tide';
+  font-size: 108px;
+  color: #ffffff;
+}
+
+#mobileapp .app-details #secure {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+#mobileapp .app-details #download {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000000;
+}
+
+#mobileapp .qr {
+  background-color: #000000;
+  border-radius: 5px;
+  max-width: 180px;
+}
+
+#mobileapp #purpose {
+  font-size: 13px;
+}
+
+#terms .p-terms {
+  font-size: 16px;
+  color: #0067b1;
+}
+
+#terms .contact {
+  background-color: #70cde3;
+}
+
+#terms .contact h3 {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+#terms .contact h3:first-child {
+  font-size: 40px;
+}
+
+#terms .contact h3 span {
+  font-weight: 400;
+}
+
+#terms .d-flex {
+  overflow-y: hidden;
+  vertical-align: middle;
+  margin-left: 100px;
+}
+
+#terms .d-flex::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: -200px;
+  height: 53px;
+  width: 300px;
+  background-color: #70cde3;
+}
+
+#terms p {
+  font-size: 14px;
+  text-align: justify;
+}
+
+@media (max-width: 1199px) {
+  .hero div {
+    padding: 20px;
+  }
+  #bg .container #prizes {
+    height: 100%;
+  }
+  #bg .container #prizes .col-md-6 .prizes-details .amount {
+    font-size: 45px;
+    margin-top: 0px;
+    padding-left: 0;
+  }
+  #bg .container #prizes .col-md-6 .prizes-details .winners {
+    margin-top: 0;
+    font-size: 18px;
+  }
+  #bg .container #prizes .col-md-6 .prizes-details .winners span {
+    font-size: 24px;
+  }
+  #bg .container #prizes .col-md-6 .prizes-details .shape1 {
+    position: absolute;
+    top: -30px;
+    left: 65px;
+    z-index: 0;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  #bg .container #prizes .col-md-6 .prizes-details .shape2 {
+    position: absolute;
+    top: -25px;
+    left: 80px;
+    z-index: 0;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  #bg .container #prizes .col-md-6 .prizes-details .shape3 {
+    position: absolute;
+    top: 50px;
+    left: 45px;
+    z-index: 0;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  #mobileapp {
+    margin-bottom: 180px;
+  }
+  #terms .d-flex::after {
+    height: 75px;
+  }
+}
+
+@media (max-width: 991px) {
+  .section-title {
+    font-size: 30px;
+  }
+  .hero {
+    height: 100%;
+  }
+  .hero img {
+    height: auto;
+    width: 70px;
+    top: 20px;
+    right: 30px;
+  }
+  .hero div {
+    padding: 20px;
+    min-height: 440px;
+  }
+  .hero div .title {
+    font-size: 70px;
+  }
+  .hero div .subtitle {
+    font-size: 25px;
+  }
+  #bg .container #prizes {
+    height: 100%;
+  }
+  #bg .container #prizes .col-md-6 .prizes-details .amount {
+    font-size: 38px;
+    margin-top: 0px;
+    padding-left: 0;
+  }
+  #bg .container #prizes .col-md-6 .prizes-details .winners {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  #bg .container #prizes .col-md-6 .prizes-details .winners span {
+    font-size: 20px;
+  }
+  #bg .container #prizes .col-md-6 .prizes-details .shape1 {
+    position: absolute;
+    top: -30px;
+    left: 10px;
+    z-index: 0;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  #bg .container #prizes .col-md-6 .prizes-details .shape2 {
+    position: absolute;
+    top: -25px;
+    left: 25px;
+    z-index: 0;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  #bg .container #prizes .col-md-6 .prizes-details .shape3 {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    z-index: 0;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  #bg .container #prizes .col-md-6 .prizes-details .others {
+    font-size: 16px;
+  }
+  #paywith p {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+  #mobileapp {
+    margin-bottom: 80px;
+    max-height: 450px;
+  }
+  #mobileapp .app-details #banking-right {
+    font-size: 35px;
+  }
+  #mobileapp .app-details #by-you {
+    font-size: 75px;
+  }
+  #mobileapp .app-details #secure {
+    font-size: 14px;
+  }
+  #mobileapp .app-details #download {
+    font-size: 14px;
+  }
+  #mobileapp .qr {
+    background: none;
+  }
+  #mobileapp #purpose {
+    font-size: 13px;
+  }
+  #terms .p-terms {
+    font-size: 12px;
+  }
+  #terms .contact h3 {
+    font-size: 18px;
+  }
+  #terms .contact h3:first-child {
+    font-size: 24px;
+  }
+  #terms .contact::after {
+    content: '';
+    position: absolute;
+    bottom: 85px;
+    left: 0;
+    height: 40px;
+    width: 60px;
+    background-color: #70cde3;
+  }
+  #terms .d-flex {
+    margin-left: 0;
+    margin-top: 40px;
+  }
+  #terms .d-flex::after {
+    display: none;
+  }
+  #terms p {
+    font-size: 12px;
+    text-align: justify;
+  }
+}
+
+@media (max-width: 767px) {
+  .section-title {
+    font-size: 20px;
+  }
+  p {
+    font-size: 16px;
+  }
+  .hero img {
+    height: auto;
+    width: 30px;
+    top: 15px;
+    right: 15px;
+  }
+  .hero div {
+    padding: 20px;
+  }
+  .hero div .title {
+    font-size: 35px;
+  }
+  .hero div .subtitle {
+    font-size: 18px;
+  }
+  #bg {
+    background: rgba(112, 205, 227, 0.3);
+  }
+  #bg .container #prizes {
+    height: 100%;
+    background: none;
+  }
+  #bg .container #prizes .col-md-6 {
+    margin-bottom: 40px;
+  }
+  #bg .container #prizes .col-md-6 .prizes-details .amount {
+    font-size: 38px;
+    margin-top: 0px;
+    padding-left: 0;
+  }
+  #bg .container #prizes .col-md-6 .prizes-details .winners {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  #bg .container #prizes .col-md-6 .prizes-details .winners span {
+    font-size: 20px;
+  }
+  #bg .container #prizes .col-md-6 .prizes-details .shape1 {
+    position: absolute;
+    top: -35px;
+    left: 110px;
+    z-index: 0;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  #bg .container #prizes .col-md-6 .prizes-details .shape2 {
+    position: absolute;
+    top: -25px;
+    left: 125px;
+    z-index: 0;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  #bg .container #prizes .col-md-6 .prizes-details .shape3 {
+    position: absolute;
+    top: 50px;
+    left: 95px;
+    z-index: 0;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  #bg .container #prizes .col-md-6 .prizes-details .others {
+    font-size: 16px;
+  }
+  #bg .container #entries {
+    background: none;
+  }
+  #bg .container #entries .table-responsive {
+    background: none;
+  }
+  #bg .container #entries .table-responsive .table thead tr th {
+    font-size: 16px;
+  }
+  #bg .container #entries .table-responsive .table tbody tr th:first-child {
+    font-size: 16px;
+  }
+  #bg .container #entries .table-responsive .table tbody tr td {
+    font-size: 16px;
+  }
+  #bg .container #entries .table-responsive .table tbody tr td span {
+    font-size: 16px;
+  }
+  #mobileapp {
+    margin-bottom: 60px;
+  }
+  #mobileapp .app-details #banking-right {
+    font-size: 30px;
+  }
+  #mobileapp .app-details #by-you {
+    font-size: 70px;
+  }
+  #mobileapp .qr {
+    background: none;
+  }
+  #mobileapp #purpose {
+    font-size: 13px;
+  }
+  #terms .p-terms {
+    font-size: 12px;
+  }
+  #terms .contact h3 {
+    font-size: 18px;
+  }
+  #terms .contact h3:first-child {
+    font-size: 24px;
+  }
+  #terms .contact::after {
+    content: '';
+    position: absolute;
+    bottom: 70px;
+    left: -70px;
+    height: 40px;
+    width: 160px;
+    background-color: #70cde3;
+  }
+  #terms .d-flex {
+    margin-left: 0;
+    margin-top: 40px;
+  }
+  #terms .d-flex::after {
+    display: none;
+  }
+  #terms p {
+    font-size: 12px;
+    text-align: justify;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .section-title {
+    font-size: 20px;
+  }
+  .btn-primary {
+    font-size: 16px;
+  }
+  .hero {
+    height: 218px;
+  }
+  .hero img {
+    height: auto;
+    width: 30px;
+    top: 15px;
+    right: 15px;
+  }
+  .hero div {
+    padding: 20px;
+  }
+  .hero div .title {
+    font-size: 35px;
+  }
+  .hero div .subtitle {
+    font-size: 18px;
+  }
+  #bg {
+    background: rgba(112, 205, 227, 0.3);
+  }
+  #bg .container #prizes {
+    height: 100%;
+    background: none;
+  }
+  #bg .container #prizes .col-md-6 {
+    margin-bottom: 40px;
+  }
+  #bg .container #prizes .col-md-6 .prizes-details .amount {
+    font-size: 38px;
+    margin-top: 0px;
+    padding-left: 0;
+  }
+  #bg .container #prizes .col-md-6 .prizes-details .winners {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  #bg .container #prizes .col-md-6 .prizes-details .winners span {
+    font-size: 20px;
+  }
+  #bg .container #prizes .col-md-6 .prizes-details .shape1 {
+    position: absolute;
+    top: -30px;
+    left: 10px;
+    z-index: 0;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  #bg .container #prizes .col-md-6 .prizes-details .shape2 {
+    position: absolute;
+    top: -25px;
+    left: 25px;
+    z-index: 0;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  #bg .container #prizes .col-md-6 .prizes-details .shape3 {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    z-index: 0;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  #bg .container #prizes .col-md-6 .prizes-details .others {
+    font-size: 16px;
+  }
+  #bg .container #entries {
+    background: none;
+  }
+  #bg .container #entries .table-responsive {
+    background: none;
+  }
+  #bg .container #entries .table-responsive .table thead tr th {
+    font-size: 16px;
+  }
+  #bg .container #entries .table-responsive .table tbody tr th:first-child {
+    font-size: 16px;
+  }
+  #bg .container #entries .table-responsive .table tbody tr td {
+    font-size: 16px;
+  }
+  #bg .container #entries .table-responsive .table tbody tr td span {
+    font-size: 16px;
+  }
+  #mobileapp {
+    margin-bottom: 180px;
+  }
+  #mobileapp .app-details #banking-right {
+    font-size: 40px;
+  }
+  #mobileapp .app-details #by-you {
+    font-size: 90px;
+  }
+  #mobileapp .app-details #secure {
+    font-size: 16px;
+  }
+  #mobileapp .app-details #download {
+    font-size: 18px;
+  }
+  #mobileapp .qr {
+    background: none;
+  }
+  #mobileapp #purpose {
+    font-size: 13px;
+  }
+  #terms .p-terms {
+    font-size: 12px;
+  }
+  #terms .contact h3 {
+    font-size: 18px;
+  }
+  #terms .contact h3:first-child {
+    font-size: 24px;
+  }
+  #terms .contact::after {
+    content: '';
+    position: absolute;
+    bottom: 85px;
+    left: 0;
+    height: 40px;
+    width: 60px;
+    background-color: #70cde3;
+  }
+  #terms .d-flex {
+    margin-left: 0;
+    margin-top: 40px;
+  }
+  #terms .d-flex::after {
+    display: none;
+  }
+  #terms p {
+    font-size: 12px;
+    text-align: justify;
+  }
+}
+/*# sourceMappingURL=custom.css.map */
